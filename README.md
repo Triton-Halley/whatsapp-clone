@@ -1,6 +1,8 @@
 # WhatsApp Clone
 
 A modern, real-time messaging application inspired by WhatsApp, built with React, TypeScript, and Tailwind CSS.
+<img width="1920" height="912" alt="Screenshot 2025-12-04 202101" src="https://github.com/user-attachments/assets/52091c40-8ff6-4b99-acbe-dbe40247b46e" />
+
 
 ## Features
 
