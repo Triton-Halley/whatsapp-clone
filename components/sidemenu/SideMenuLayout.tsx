@@ -13,9 +13,10 @@ import {
 import Link from 'next/link'
 import Tooltipwrapper, { TooltipPosition } from './Tooltipwrapper'
 import { MessageSquareTextIcon } from 'lucide-react'
-export default function SideMenuLayout() {
+import { ReactNode } from 'react'
+export default function SideMenuLayout({ children }: Readonly<{ children: ReactNode }>) {
     return (
-        <>
+        <div className='flex flex-col min-h-screen'>
             <div className='pt-2 pl-2'>
                 <div className='flex items-center gap-1'>
                     <Image src={"/whatsapp.svg"} alt='' width={30} height={30} />
@@ -64,10 +65,10 @@ export default function SideMenuLayout() {
                         </Tooltipwrapper>
                     </div>
                 </div>
-                <main className='col-span-19 text-white border rounded'>
-
+                <main className='col-span-19 text-white ring ring-gray-600/70 rounded-lg flex flex-col overflow-hidden'>
+                    {children}
                 </main>
             </div>
-        </>
+        </div>
     )
 }

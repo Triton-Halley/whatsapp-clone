@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Providers from "./providers";
 import './globals.css'
+import SideMenuLayout from "@/components/sidemenu/SideMenuLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,10 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#1d1f1f]`}
       >
         <Providers>
-          {children}
+          <SideMenuLayout>
+            {children}
+          </SideMenuLayout>
         </Providers>
       </body>
     </html>
