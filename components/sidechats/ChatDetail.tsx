@@ -22,7 +22,7 @@ export default function ChatDetail() {
             <AvatarFallback><UserIcon className='text-gray-500' /></AvatarFallback>
           </Avatar>
         </div>
-        <div className='col-span-2'><Typography.H4>Shah Mamad</Typography.H4></div>
+        <div className='col-span-2'><Typography.H4>Alex</Typography.H4></div>
         <div className='col-span-13'></div>
         <div className='col-span-1 place-self-center'><Video /></div>
         <div className='col-span-1 place-self-center'><Phone /></div>

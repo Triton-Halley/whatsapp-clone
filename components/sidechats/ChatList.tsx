@@ -15,14 +15,14 @@ const category = ["All", "Unread", "Favorites", "Groups"]
 const chats = [
     {
         avatar: "",
-        name: "Shah Mamad",
-        last_message: "There is a lots of danger on the way please be careful",
+        name: "Alex",
+        last_message: "Lorem ipsum dolor sit, amet consectetur...",
         last_message_time: "17:43",
         active: true
     },
     {
         avatar: "",
-        name: "ASL Kar",
+        name: "Mohammad",
         last_message: "Take Care",
         last_message_time: "22:00",
         active: false
@@ -59,7 +59,7 @@ export default function ChatList() {
                     </div>
                     <div className='col-span-10'>
                         <div>{chat.name}</div>
-                        <div className='flex items-center gap-1'><CheckCheck className='size-5 text-blue-400' /><Typography.Muted>{chat.last_message}</Typography.Muted></div>
+                        <div className='flex items-center gap-1 text-ellipsis min-w-max overflow-hidden whitespace-nowrap'><CheckCheck className='size-5 text-blue-400' /><Typography.Muted>{chat.last_message}</Typography.Muted></div>
                     </div>
                     <div className='col-span-1'><Typography.Muted>{chat.last_message_time}</Typography.Muted></div>
                 </div>
